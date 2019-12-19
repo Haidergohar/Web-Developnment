@@ -1,0 +1,3 @@
+- must install composer for mailing system.
+- Add Email Address in header.php.
+- To check send mail functionality add email address in sending_email.php.
