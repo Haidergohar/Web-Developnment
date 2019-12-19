@@ -1,0 +1,346 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Currency Conversion Chart</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- icons link     ----------------->
+    <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css'
+        integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
+
+    <!-- Bootsrtap link     ----------------->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <!-- offline bootsrtrap link (in case of loosing internet connectivity)    ----------------->
+    <link rel="stylesheet" type="text/css" href="../bootstrap/bootstrap.min.css">
+
+    <!-- main css link     ----------------->
+    <link rel="stylesheet" type="text/css" href="../css/main.css">
+
+    <!--- history page css link ------------>
+    <link rel="stylesheet" type="text/css" href="../css/conversion_history.css">
+
+
+</head>
+
+<body>
+    <div class="container-fluid">
+
+
+        <header class="jumbo">
+            <div class="container nav-menubar">
+                <nav class="navbar navbar-fixed-top">
+
+                    <div class="navbar-header">
+                        <a class="navbar-brand" href="../index.html">Metric Conversion System</a>
+                        <button class="navbar-toggle" data-toggle="collapse" data-target="#a1">
+                            <span class="icon-bar" style="color:black"></span>
+                            <span class="icon-bar" style="color:black"></span>
+                            <span class="icon-bar" style="color:black"></span>
+                        </button>
+
+                    </div>
+
+                    <div class="collapse navbar-collapse" id="a1">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a href="../index.html">Home</a></li>
+                            <li><a href="../charts.html">Chart</a></li>
+                            <li><a href="../articles.html">Articles</a></li>
+                            <li><a href="../FAQs.html">Faqs</a></li>
+                            <li><a href="../about_us.html">About us</a></li>
+                            <li><a href="../contact_us.html">Contact us</a></li>
+                        </ul>
+                    </div>
+
+
+
+
+                </nav>
+
+            </div>
+            <center>
+                <div class="header-text">
+                    <h1>Metric Conversions</h1>
+                    <h4>Convert any measurement you want from lenght to area, mass to temprature and anything...</h4>
+                    <button class="btn hd-btn">Learn More</button>
+                </div>
+            </center>
+        </header>
+
+
+
+        <div class="container-fluid input-section">
+            <div>
+                <h1>Metric conversion Calculator</h1>
+            </div>
+            <div class="container inputs">
+                <div class="row text-center ">
+                    <div class="col-lg-5">
+                        <input type="number" class="top-input" id="input_1" onfocus="clearme()"
+                            oninput="currencyconversions()" />
+                        <br>
+                        <br>
+
+                        <select class="bg-info list1" id="slct_1">
+                            <option value="pk">Pakistan</option>
+                            <option value="usd">U.S Dollar</option>
+                            <option value="ch">Chinese Yuan</option>
+                            <option value="sr">Saudi Riyal</option>
+                        </select>
+                    </div>
+                    <div class="col-lg-2">
+                        <span class="fas fa-arrow-right" style="font-size:50px; color:wheat"></span>
+
+                    </div>
+                    <div class="col-lg-5">
+                        <input type="number" class="top-input" id="input_2" />
+                        <br>
+                        <br>
+
+                        <select class="bg-info list1" id="slct_2">
+                            <option value="pk">Pakistan</option>
+                            <option value="usd">U.S Dollar</option>
+                            <option value="ch">Chinese Yuan</option>
+                            <option value="sr">Saudi Riyal</option>
+                        </select>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="../javascript/main.js"></script>
+
+        <div class="container">
+
+            <div class="history-section">
+                <article>
+                    <h1>Currency Conversion Description</h1>
+                    <h1>1-Pakistani rupee</h1>
+                    <h4>Worldwide use:</h4>
+
+                    <h2>Pakistan</h2>
+                    <h3>Description:</h3>
+
+                    <p> The Pakistani Rupee is the currency of Pakistan. The subunit of the Rupee, the Paisa, has not
+                        been issued since 1994. The denominations of coins are 1, 2 and 5 Rupees and for notes 10, 20,
+                        50, 100, 500, 1000 and 5000 Rupees.</p>
+
+                    <p>Most Pakistani Rupee banknotes have the portrait of Muhammad Ali Jinnah on them. He was the first
+                        Governor General and died a year after the country gained independence from the British Raj in
+                        1948. Alongside his portrait the Urdu writing reads 'Hasool-e-Rizq-Halal Ibaadat hai' which
+                        means 'Seeking honest livelihood is the Worship of God.'</p>
+
+                    <h2>Origin:</h2>
+
+                    <p>The word Rupee or Rupaya comes from the word 'Sanskrit' which means 'a coin of silver that has
+                        been stamped or impressed with an image or likeness.' The first Rupee was introduced by Sher
+                        Shah Suri who ruled the Sur Empire in North India from 1540–1545.</p>
+
+                    </h3>Component units:</h3>
+
+                    <h4>paisa (100)</h4>
+                    <h2>Date introduced:</h2>
+
+                    <h3>1948</h3>
+                    <h1>Central bank:</h1>
+
+                    <h4>State Bank of Pakistan</h4>
+                    </br>
+                    </br>
+
+
+
+                    <h1>2-China yuan </h1>
+                    <h2>Worldwide use:</h2>
+
+                    <h4>1.China</br>
+                        2.North Korea (until Nov 2009)</br>
+                        3.Burma (in Kokang and Wa)</br>
+                        4.Hong Kong</br>
+                        5.Macau</h4>
+
+                    <h3>Description:</h3>
+
+                    China's official currency is known as the Renminbi but is often referred to as the Chinese Yuan.
+                    Renminbi is the official name given by the Communist People's Republic of China in 1949. "Renminbi"
+                    means "The People's currency." The Yuan is a subunit of the Renminbi currency with one Yuan being
+                    made up of 10 Jiǎo (角) and a Jiǎo is made up of 10 Fēn (分). Renminbi banknotes come in denominations
+                    of ¥0.1, ¥0.2, ¥0.5, ¥1, ¥2, ¥5, ¥10, ¥20, ¥50 and ¥100 and coins of ¥0.01, ¥0.02, ¥0.05, ¥0.1, ¥0.5
+                    and ¥1.</br></br>
+
+                    Chinese people don't often refer to "Renminbi" or "Yuan" and instead use the colloquial name "Kuai"
+                    which means "piece." Although not currently used much outside of China, the Renminbi is expected to
+                    become a major world currency for trading in the future.
+                    </br>
+                    <h2>Origin:</h2>
+
+                    Renminbi banknotes were first established in December 1948, roughly one year before the
+                    establishment of the People's Republic of China. Initially it was only circulated in notes and
+                    replaced multiple currencies that were in use at the time. The government used the new currency to
+                    ease the hyperinflation experienced by the country during the Kuomintang period and the currency was
+                    re-valued in 1955.
+
+                    <h3>Component units:</h3>
+
+                    <h4>ǎo (角) (10)</br></br>
+                        fēn (分) (100)</h4>
+
+                    <h3>Date introduced:</h3>
+
+                    <h4>1948</h4>
+
+                    <h3>Central bank:</h3>
+
+                    <h5>People's Bank of China</h5>
+
+                    <h3>Printer:</h3>
+
+                    <h5>China Banknote Printing and Minting (CBPMC; 中国印钞造币总公司)</h5>
+                    <h3>Mint:</h3>
+
+                    <h5>China Banknote Printing and Minting (CBPMC; 中国印钞造币总公司</h5>
+                    </br></br>
+
+                    <h1>3-United States dollar</h1>
+                    <h3>Worldwide use:</h3>
+
+                    <h5>United States of America</br>
+                        East Timor</br>
+                        Ecuador</br>
+                        El Salvador</br>
+                        Panama</br>
+                        Puerto Rico</br>
+                        Northern Mariana Islands</br>
+                        U.S. Virgin Islands</br>
+                        American Samoa</br>
+                        Guam</br>
+                        Trust Territory of the Pacific Islands (1947–1994)</br>
+                        United States Minor Outlying Islands</br>
+                        Marshall Islands</br>
+                        Federated States of Micronesia</br>
+                        Palau</br>
+                        Caribbean Netherlands (Netherlands)</br>
+                        British Virgin Islands (UK)</br>
+                        Turks and Caicos Islands (UK)</br>
+                        Bermuda</h5>
+
+                    <h3>Description:</h3>
+
+                    The US Dollar is the official currency for the United States of America and is one of the world's
+                    most powerful currencies. Ranked as the number one traded currency in the world, it is the largest
+                    reserve currency. Multiple countries use the US Dollar as their primary or secondary currency. The
+                    Dollar is made up of 100 Cents and coins come in denominations of 1¢, 5¢, 10¢, 25¢, 50¢ and $1. Bank
+                    notes are available in $1, $2, $5, $10, $20, $50 and $100.</br></br>
+
+                    US Dollar banknotes are made from cotton and known as 'Greenbacks' because of their green and black
+                    coloring.
+
+                    <h2>Origin:</h2>
+
+                    The Dollar was first declared the official currency of the United States on 6 July, 1785 but the
+                    United States Mint wasn’t established until 1792. The Coinage Act stated that coins would be made of
+                    gold, silver and copper in denominations of $10, $5 and $2.5 and that all coins must show the word
+                    “Liberty” and resemble such sentiment and the year of issue on one side and that on the reverse, all
+                    coins should show an eagle with the words “United States of America.” In 1863 the first $1 banknote
+                    was issued as legal tender.
+
+                    <h3>Component units:</h3>
+
+                    <h5>Dime (10)</br>
+                        Cent (100)</br>
+                        Mil (1000)</h5>
+
+                    <h3>Date introduced:</h3>
+                    <h5>1785</h5>
+
+                    <h3>Central bank:</h3>
+                    <h5>Federal Reserve System</h5>
+
+                    <h3>Printer:</h3>
+                    <h5>Bureau of Engraving and Printing</h5>
+
+                    <h3>Mint:</h3>
+
+                    <H5>United States Mint</H5></br>
+
+                    <h1>5-Saudi riyal</h1>
+
+                    <h3>Worldwide use:</h3>
+                    <h4>Saudi Arabia</h4>
+
+                    <h3>Description:</h3>
+
+                    The Saudi Riyal is the official currency of Saudi Arabia. One Riyal is subdivided into 100 Halala.
+                    Riyal banknotes are available in 1, 5, 10, 50, 100, 200 and 500 Riyals. Coins come in denominations
+                    of 5 and 10 Halala, though not largely used, the 25 Halala or quarter Riyal, the 50 Halala or the
+                    half Riyal and the 100 Halala. The fifth issue of the Saudi Riyal was issued in 2007. The new series
+                    have the latest and most advanced security system to prevent counterfeiting.</br></br>
+
+                    In 2012 a total of 152.5 billion Saudi Riyal notes were printed. This is 505 times more than the
+                    value of coins minted in the same year. The largest quantities printed amongst the Saudi Riyal
+                    denominations was the 500 Riyal note with a total print value of SR122 billion. The least printed
+                    note was the SR20 Riyal note with a value of only SR180.6 million.
+
+                    <h2>Origin:</h2>
+
+                    The Saudi currency used today is a descendant of the Maria Theresa Thaler which was a silver bullion
+                    coin used in world trade since 1741. It was named after Empress Maria Theresa who ruled Austria,
+                    Hungry and Bohemia from 1740 to 1780. The name Thaler evolved into the word Daaler and Daler, which
+                    then became Dollar.
+
+                    <h3>Component units:</h3>
+                    <h5>Halalas (100)</h5>
+
+                    <h3>Date introduced:</h3>
+                    <h4>1966</h4>
+
+                    <h3>Central bank:</h3>
+                    <h5>Saudi Arabian Monetary Agency</h5>
+
+                    <h3>Printer:</h3>
+                    <h5>Saudi Arabian Monetary Agency</h5>
+
+                    <h3>Mint:</h3>
+                    <h5>Saudi Arabian Monetary Agency</h5>
+
+                </article>
+            </div>
+
+        </div>
+
+
+
+
+        <!-- footer start -->
+        <footer class="jumbotron foot">
+            <div class="row">
+                <div class"col-lg-5">
+                    <div class="container text-center">
+                        <div class="foot-links">
+                            <a href="../about_us.html"> About Us</a> |
+                            <a href="#"> Services</a> |
+                            <a href="#"> Privacy Policy</a> |
+                            <a href="../contact_us.html"> Contact Us</a>
+                        </div>
+                        <div class="container foot_icons">
+                            <span class="fab fa-youtube"></span>
+                            <span class="fab fa-facebook"></span>
+                            <span class="fab fa-whatsapp"></span>
+                            <span class="fab fa-twitter"></span>
+                        </div>
+                        <p>© Copyright 2019 Metric Conversion Websites - All Rights Reserved</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

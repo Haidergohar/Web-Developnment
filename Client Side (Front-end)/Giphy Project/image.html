@@ -1,0 +1,73 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Gifsty | Download</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="assets/css/stylesheet.css">
+
+     <!-- download.js library link for downloading file -->
+    <script src="http://danml.com/js/download.js"></script>
+
+    <style>
+        body{
+            background: url("img/bg-image.jpg");
+        }
+    </style>
+</head>
+<body>
+    <div class="container img-page">
+        <div class="container text-center image-container">
+            <img src="" id="he" alt="">
+        </div>
+        <div class="container btn-container text-center" id="btns">
+            <button class="btn btn-info img-btn" onclick="goBack()">Go Back</button>
+            <button class="btn btn-success img-btn" onclick="down_image()">Download</button>
+        </div>
+    </div>
+
+    <script>
+        window.onload = function () {
+                var url = document.location.href,
+                params = url.split('?')[1].split('&'),
+                data = {}, tmp;
+                for (var i = 0, l = params.length; i < l; i++) {
+                   tmp = params[i].split('=');
+                   data[tmp[0]] = tmp[1];
+                }
+                document.getElementById('he').src = decodeURIComponent(data.img); 
+                
+                var btns = document.getElementById('btns');
+                btns.style.visibility = "visible";
+        }    
+    
+        function down_image(){
+            // download("data:image/gif;base64,R0lGODlhRgAVAIcAAOfn5+/v7/f39////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////yH5BAAAAP8ALAAAAABGABUAAAj/AAEIHAgggMGDCAkSRMgwgEKBDRM+LBjRoEKDAjJq1GhxIMaNGzt6DAAypMORJTmeLKhxgMuXKiGSzPgSZsaVMwXUdBmTYsudKjHuBCoAIc2hMBnqRMqz6MGjTJ0KZcrz5EyqA276xJrVKlSkWqdGLQpxKVWyW8+iJcl1LVu1XttafTs2Lla3ZqNavAo37dm9X4eGFQtWKt+6T+8aDkxUqWKjeQUvfvw0MtHJcCtTJiwZsmLMiD9uplvY82jLNW9qzsy58WrWpDu/Lp0YNmPXrVMvRm3T6GneSX3bBt5VeOjDemfLFv1XOW7kncvKdZi7t/S7e2M3LkscLcvH3LF7HwSuVeZtjuPPe2d+GefPrD1RpnS6MGdJkebn4/+oMSAAOw==", "dlDataUrlBin.gif", "image/gif");
+            var x=new XMLHttpRequest();
+            var url = document.location.href,
+                params = url.split('?')[1].split('&'),
+                data = {}, tmp;
+                for (var i = 0, l = params.length; i < l; i++) {
+                   tmp = params[i].split('=');
+                   data[tmp[0]] = tmp[1];
+                }
+            url = decodeURIComponent(data.img);
+            title = decodeURIComponent(data.title);
+	        x.open("GET", url, true);
+	        x.responseType = 'blob';
+	        x.onload=function(e){download(x.response, title, "image/gif" ); }
+	        x.send();
+        }
+
+        function goBack() {
+            window.history.back();
+        }
+    </script>
+</body>
+</html>

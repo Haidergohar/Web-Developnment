@@ -1,0 +1,224 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Mass Conversion Chart</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- icons link     ----------------->
+    <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css'
+        integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
+
+    <!-- Bootsrtap link     ----------------->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <!-- offline bootsrtrap link (in case of loosing internet connectivity)    ----------------->
+    <link rel="stylesheet" type="text/css" href="../bootstrap/bootstrap.min.css">
+
+    <!-- main css link     ----------------->
+    <link rel="stylesheet" type="text/css" href="../css/main.css">
+
+    <!--- history page css link ------------>
+    <link rel="stylesheet" type="text/css" href="../css/conversion_history.css">
+
+
+</head>
+
+<body>
+    <div class="container-fluid">
+
+
+        <header class="jumbo">
+            <div class="container nav-menubar">
+                <nav class="navbar navbar-fixed-top">
+
+                    <div class="navbar-header">
+                        <a class="navbar-brand" href="../index.html">Metric Conversion System</a>
+                        <button class="navbar-toggle" data-toggle="collapse" data-target="#a1">
+                            <span class="icon-bar" style="color:black"></span>
+                            <span class="icon-bar" style="color:black"></span>
+                            <span class="icon-bar" style="color:black"></span>
+                        </button>
+
+                    </div>
+
+                    <div class="collapse navbar-collapse" id="a1">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a href="../index.html">Home</a></li>
+                            <li><a href="../charts.html">Chart</a></li>
+                            <li><a href="../articles.html">Articles</a></li>
+                            <li><a href="../FAQs.html">Faqs</a></li>
+                            <li><a href="../about_us.html">About us</a></li>
+                            <li><a href="../contact_us.html">Contact us</a></li>
+                        </ul>
+                    </div>
+
+
+
+
+                </nav>
+
+            </div>
+            <center>
+                <div class="header-text">
+                    <h1>Metric Conversions</h1>
+                    <h4>Convert any measurement you want from lenght to area, mass to temprature and anything...</h4>
+                    <button class="btn hd-btn">Learn More</button>
+                </div>
+            </center>
+        </header>
+
+
+
+        <div class="container-fluid input-section">
+            <div>
+                <h1>Metric conversion Calculator</h1>
+            </div>
+            <div class="container inputs">
+                <div class="row text-center ">
+                    <div class="col-lg-5">
+                        <input type="number" class="top-input" id="input_1" onfocus="clearme()"
+                            oninput="massconversions()" />
+                        <br>
+                        <br>
+
+                        <select class="bg-info list1" id="slct_1">
+                            <option value="on">Ounces</option>
+                            <option value="gr">Grams</option>
+                            <option value="pnd">Pounds</option>
+                            <option value="kg">Kilograms</option>
+                            <option value="st">Short Tons (2000 lb)</option>
+                            <option value="mg">Mega Grams</option>
+                        </select>
+                    </div>
+                    <div class="col-lg-2">
+                        <span class="fas fa-arrow-right" style="font-size:50px; color:wheat"></span>
+
+                    </div>
+                    <div class="col-lg-5">
+                        <input type="number" class="top-input" id="input_2" />
+                        <br>
+                        <br>
+
+                        <select class="bg-info list1" id="slct_2">
+                            <option value="on">Ounces</option>
+                            <option value="gr">Grams</option>
+                            <option value="pnd">Pounds</option>
+                            <option value="kg">Kilograms</option>
+                            <option value="st">Short Tons (2000 lb)</option>
+                            <option value="mg">Mega Grams</option>
+                        </select>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="../javascript/main.js"></script>
+
+        <div class="container">
+
+            <div class="history-section">
+                <article>
+                    <h1>Mass Conversion Description</h1>
+                    <p>Mass is both a property of a physical body and a measure of its resistance to acceleration (a
+                        change in its state of motion) when a net force is applied.[1] The object's mass also determines
+                        the strength of its gravitational attraction to other bodies.</p>
+
+                    <p>The basic SI unit of mass is the kilogram (kg). In physics, mass is not the same as weight, even
+                        though mass is often determined by measuring the object's weight using a spring scale, rather
+                        than balance scale comparing it directly with known masses. An object on the Moon would weigh
+                        less than it does on Earth because of the lower gravity, but it would still have the same mass.
+                        This is because weight is a force, while mass is the property that (along with gravity)
+                        determines the strength of this force.</p>
+                </article>
+            </div>
+
+        </div>
+
+        <div class="container">
+            <h1>Mass Conversion Chart</h1>
+            <center>
+                <table class="table-bordered 2px" id="table1">
+                    <tr>
+                        <th colspan="6" class="text-center bg-warning">Metric Lenght Conversion</th>
+                    </tr>
+
+                    <tr>
+                        <td>1 centimeters</td>
+                        <td>=</td>
+                        <td>10 milimeters</td>
+                        <td>1 cm</td>
+                        <td>=</td>
+                        <td>10 mm</td>
+                    </tr>
+
+                    <tr>
+                        <td>1 decimeters</td>
+                        <td>=</td>
+                        <td>10 centimeters</td>
+                        <td>1 dm</td>
+                        <td>=</td>
+                        <td>10 cm</td>
+                    </tr>
+
+                    <tr>
+                        <td>1 meter</td>
+                        <td>=</td>
+                        <td>100 centimeters</td>
+                        <td>1 m</td>
+                        <td>=</td>
+                        <td>100 cm</td>
+                    </tr>
+                    <td>1 meter</td>
+                    <td>=</td>
+                    <td>10 decimeters</td>
+                    <td>1 m</td>
+                    <td>=</td>
+                    <td>10 dm</td>
+
+                    <tr>
+                        <td>1 kilmeter</td>
+                        <td>=</td>
+                        <td>1000 meters</td>
+                        <td>1 km</td>
+                        <td>=</td>
+                        <td>1000 m</td>
+                    </tr>
+                </table>
+            </center>
+        </div>
+
+
+        <!-- footer start -->
+        <footer class="jumbotron foot">
+            <div class="row">
+                <div class"col-lg-5">
+                    <div class="container text-center">
+                        <div class="foot-links">
+                            <a href="../about_us.html"> About Us</a> |
+                            <a href="#"> Services</a> |
+                            <a href="#"> Privacy Policy</a> |
+                            <a href="../contact_us.html"> Contact Us</a>
+                        </div>
+                        <div class="container foot_icons">
+                            <span class="fab fa-youtube"></span>
+                            <span class="fab fa-facebook"></span>
+                            <span class="fab fa-whatsapp"></span>
+                            <span class="fab fa-twitter"></span>
+                        </div>
+                        <p>© Copyright 2019 Metric Conversion Websites - All Rights Reserved</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- end footer -->
+    </div>
+</body>
+
+</html>

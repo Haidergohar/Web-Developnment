@@ -1,0 +1,100 @@
+@charset "utf-8";
+/* CSS Document */
+*{
+    font-family: 'Prompt', sans-serif;
+
+}
+.tables table{
+		
+			width: 70%;
+		}
+		
+.tables table tr{
+			border:  2px solid black;
+		}
+		
+.tables table td{
+			padding: 15px;
+			font-size: 100% ;
+		}
+
+
+.tables table th{
+			padding: 18px;
+		}
+
+.heading{
+	background-color: skyblue;
+	color: green;
+	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+	font-size: 50px;
+	padding:20px;
+	margin-top: 40px;
+	margin-bottom: 10px;
+}
+
+#table1 tr:nth-child(even){
+	
+	background-color: lightgoldenrodyellow;
+}
+
+#table1 tr:hover {
+	background-color: #ddd;
+}
+
+
+#table2 tr:nth-child(even){
+	
+	background-color: lightcoral;
+}
+
+#table2 tr:hover {
+	background-color: #ddd;
+}
+
+#table3 tr:nth-child(even){
+	
+	background-color: skyblue;
+}
+
+#table3 tr:hover {
+	background-color: #ddd;
+}
+
+#table4 tr:nth-child(even){
+	
+	background-color:lightgoldenrodyellow;
+}
+
+#table4 tr:hover {
+	background-color: #ddd;
+}
+
+#table5 tr:nth-child(even){
+	
+	background-color:lightgreen;
+}
+
+#table5 tr:hover {
+	background-color: #ddd;
+}
+
+
+
+/* Media Query for header image */
+
+
+@media only screen and (max-width: 700px) {
+	.tables table td{
+		padding: 10px;
+		font-size: 80% ;
+	}
+
+	
+	.tables table{
+		
+		width: 95%;
+	}
+}
+/* end media query */
+

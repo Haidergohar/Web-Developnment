@@ -1,0 +1,456 @@
+@charset "utf-8";
+
+*{
+	margin: 0px;
+}
+
+body{
+	background: whitesmoke;
+}
+
+/* image default*/
+
+img{
+	width: 100%;
+}
+
+#active{
+	background: cyan;
+	color: blue;;
+
+}
+
+/* header css */
+
+
+.jumbo{
+	background: url("../img/header.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-size: 100% 100%;
+	width: 100%;
+	min-height: 500px;
+	border-radius: 5px;
+	margin: 0px;
+	padding-bottom: 30px;
+}
+
+.jumbo .header-text{
+	background-color: #1b0c0c5d;
+	max-width: 700px;
+	text-align: center;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	letter-spacing: 1px;
+	padding: 5px;
+	padding-bottom: 20px;
+	margin-top: 100px;
+}
+
+.jumbo .header-text h1{
+	font-size: 50px;
+	color: #33ff3d;
+	font-weight: 600;
+	
+}
+
+.jumbo .header-text h4{
+	font-size: 25px;
+	color: white;
+	font-weight: 400;
+	
+}
+
+
+.hd-btn{
+	
+	padding: 10px 30px;
+	font-size: 18px;
+	margin-top: 5px;
+	background-color: #4574CC;
+	font-weight: bold;
+	color: white;
+}
+
+.hd-btn:hover{
+	background-color: rgb(68, 100, 160);	
+	color: white;
+}
+
+/* end header */
+
+
+/* header navigation menu */
+
+.nav-menubar{
+	width: 100%;
+}
+
+.navbar{
+	background-color: #4574CC;
+}
+
+.nav li a{
+	color: white;
+	font-size: 17px;
+	font-weight: bold;
+	letter-spacing: 2px;
+	transition: all linear 0.3s;
+}
+
+.nav li a:hover{
+	background-color:white;
+	color: #4574CC;
+}
+
+.navbar .navbar-header .navbar-toggle{
+	background:white;
+	color: black;
+}
+.navbar .navbar-toggle .icon-bar {
+	background-color: #4574CC;
+}
+	
+.navbar .navbar-header .navbar-brand{
+	color: white;
+	cursor: pointer;
+}
+		
+/* end header navigation menu css*/	
+
+
+/* inputs section css */
+
+.top-input{
+	padding: 10px;
+	border-radius: 5px;
+	font-size: 20px;
+	border: 0px;
+	width: 80%;
+	
+}
+
+.list1{
+	font-size: 40px;
+}
+
+.input-section{
+	background-color: #4574CC;
+	padding-bottom: 30px;;
+}
+
+.input-section h1{
+	font-family: aharoni;
+	background: #FFF0F0;
+	color: rgb(105, 46, 46);
+	font-weight: 800;
+	letter-spacing: 1px;
+	padding: 20px;
+	width: 100%;
+	text-align: center;
+	border-radius: 4px;
+	text-shadow: 1px 1px brown;
+}
+
+.input-section .inputs{
+	padding-top: 40px;
+	padding-bottom: 20px;
+}
+
+
+.input-section input:hover{
+	
+	background-color: cyan;
+}
+
+
+.input-section select{
+	background: aliceblue;
+	font-size: 28px;
+}
+
+
+.input-section select option{
+	background: lightblue;
+}
+
+.input-section select:hover{
+	opacity: 0.8;
+	cursor: pointer;
+}
+.input-section select option:hover{
+	background: black;
+	cursor: pointer;
+}
+
+/* end inputs section css*/
+
+
+
+.radio-text{
+	color: white;
+	font-size: 16px;
+	font-family:Britannic Bold;
+}
+
+/* front intro article css */
+
+.mainpage-mainarticle{
+	padding: 50px 0px;
+}
+
+.mainpage-mainarticle article{
+	font-size: 20px;
+}
+
+/* end front intro article css */
+
+
+/* home page Buttons Section */
+
+.button-section{
+	background-color: #4574CC;
+	padding: 40px 25px;
+
+}
+
+.btns {
+	border: 3px solid white;
+	color: white;
+	background: transparent;
+	cursor: pointer;
+	padding: 25px 50px;
+	display: inline-block;
+	margin: 15px 30px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-weight: 700;
+	outline: none;
+	position: relative;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+	width: 89%;
+}
+
+.btns:after {
+	content: '';
+	position: absolute;
+	z-index: -1;
+	color: black;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+.btn-1d {
+	overflow: hidden;
+}
+
+.btn-1d:after {
+	width: 0;
+	height: 103%;
+	top: 50%;
+	left: 50%;
+	background: #fff;
+	opacity: 0;
+	
+	-webkit-transform: translateX(-50%) translateY(-50%);
+	-moz-transform: translateX(-50%) translateY(-50%);
+	-ms-transform: translateX(-50%) translateY(-50%);
+	transform: translateX(-50%) translateY(-50%);
+}
+
+.btn-1d:hover,
+.btn-1d:active {
+	color:  #4574CC;
+	z-index: 1;
+}
+
+.btn-1d:hover:after {
+	width: 90%;
+
+	opacity: 1;
+}
+
+.btn-1d:active:after {
+	width: 101%;
+	opacity: 1;
+	
+	color: black;
+	background: brown;
+}
+
+/* end home page button section */
+
+
+/* home page articles section */
+
+
+.mainpage-article{
+	text-align: left;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	padding: 20px 20px;
+	padding-top: 20px;
+	background-color: #5E84C9;
+}
+
+.mainpage-article .row .col-lg-6 img{
+	height: 30px;
+}
+
+.mainpage-article h1{
+	padding: 20px;
+	margin-bottom: 15px;
+	color: black;
+	background-color: #FFF0F0;
+}
+
+.mainpage-article .article-box{
+	margin-top: 15px;
+}
+
+.mainpage-article .article-intro{
+	background-color: white;
+	padding: 20px;
+}
+
+#article-img{
+	height: 300px;
+	background: #3B8BEB;
+}
+
+.btn-rm{
+	width: 40%;
+	padding: 10px 5px;
+	font-size: 15px;
+	font-weight: bold;
+	background-color: #508aff;
+	letter-spacing: 2px;
+	color: white;
+	border-radius: 5px;
+}
+
+.btn-rm:hover{
+	background: #9a9ceb;
+	color: white;
+}
+/* end home page article section */
+
+
+/* features (optional) */
+
+.feetures-content{
+	text-align: center;
+	padding: 40px 5px;
+
+}
+
+/* end features */
+
+
+/* Faq Section */
+
+.faqs-section{
+	padding: 40px;
+	margin-bottom: 30px;
+}
+
+.faqs-section h1{
+	border-bottom: 3px solid #4E709F;
+	font-size: 45px;
+}
+
+.faqs-section .faq-demo{	
+	background-color:#4E709F;
+	padding: 30px;
+	color: white;
+	margin-top: 15px;
+}
+
+.faqs-section .faq-demo:hover{
+	color: white;
+	opacity: 0.8	;
+	cursor: pointer;
+}
+
+/* end faq section */
+
+
+/* footer */
+
+.foot{
+    font-family: 'Roboto Condensed', sans-serif;
+	color: white;
+	margin-top: 20px;
+	font-size:18px;
+	background-color: #4574CC;
+}
+.foot-links{
+	padding-bottom: 20px;
+}
+
+.foot-links a{
+	color: white;
+	font-size:18px;
+	
+}
+
+.foot .foot_icons span{
+	padding: 5px 7px;
+	font-size: 40px;
+	cursor: pointer;
+}
+
+.foot-links a:hover, .foot_icons span:hover{
+	opacity: 0.8;
+	cursor: pointer;
+}
+
+.foot p{
+	margin-top: 10px;
+}
+/* footer */
+
+
+
+/* about us page */
+
+.about_us{
+	padding: 20px;
+}
+
+.about_us article h1{
+	background-color: #4574CC;
+	color: white;
+	padding: 20px;
+}
+
+.about_us article p{
+	padding: 0px;
+	font-size: 130%;
+	text-align: justify;
+}
+
+/* end about us page */
+
+
+
+
+/* Media Query for header image */
+
+
+@media only screen and (max-width: 600px) {
+	.jumbo{
+		min-height: 300px;
+	}
+	
+}
+/* end media query */
+
+
+
+
+
+
+

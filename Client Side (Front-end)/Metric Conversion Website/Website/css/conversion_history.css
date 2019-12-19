@@ -1,0 +1,56 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+
+table{
+		
+			width: 70%;
+		}
+		
+		tr{
+			border:  2px solid black;
+		}
+		
+		td{
+			padding: 15px;
+		}
+
+
+		th{
+			padding: 15px;
+		}
+
+.heading{
+	background-color: skyblue;
+	color: green;
+	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+	font-size: 50px;
+}
+
+#table1 tr:hover {
+	background-color: #ddd;
+}
+
+#table1 tr:nth-child(even){
+	
+	background-color: lightgoldenrodyellow;
+}
+
+
+/* Media Query for header image */
+
+
+@media only screen and (max-width: 700px) {
+	td{
+		padding: 10px;
+		font-size: 80% ;
+	}
+
+	
+	table{
+		
+		width: 95%;
+	}
+}
+/* end media query */

@@ -1,0 +1,62 @@
+@charset "utf-8";
+/* CSS Document */
+
+.h1-heading{
+	color: black;
+	text-align: center;
+	padding: 20px;
+	background-color: aqua;
+	font-size: 38px;
+	font-weight: bold;
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+
+.accordion{
+	width: 100%;
+	background-color: skyblue;
+	cursor: pointer;
+	color: black;
+	transition: 0.10s;
+	padding:  20px;
+	font-size: 22px;
+	text-align: left;
+	border: 1px solid white;
+	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+}
+
+.accordion:hover{
+	background-color:#25B6DB;
+	color: wheat;
+}
+
+.panel{
+	background-color:#B336AA;
+	display: none;
+	color: white;
+	overflow: hidden;
+	padding:  18px;
+}
+
+.panel:hover{
+	background-color:#5FA4C1;
+	cursor: pointer;
+}
+
+p{
+	font-size: 22px;
+	
+}
+
+
+.accordion:after{
+	content: '\02795';
+	float: right;
+	margin: 5px;
+	font-size: 12px;
+}
+
+.active:after{
+	content: '\2796';
+}

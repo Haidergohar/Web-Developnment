@@ -1,0 +1,399 @@
+<!doctype html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Metric Conversion Chart And Calculator</title>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- icons link     ----------------->
+    <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
+    
+    <!-- Bootsrtap link     ----------------->    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    
+    <!-- google fonts link     -------------->
+    <link href="https://fonts.googleapis.com/css?family=Anonymous+Pro|Cabin+Condensed|Prompt|Roboto+Condensed" rel="stylesheet">
+<!--
+    font-family: 'Roboto Condensed', sans-serif;
+    font-family: 'Prompt', sans-serif;
+    font-family: 'Cabin Condensed', sans-serif;
+    font-family: 'Anonymous Pro', monospace;
+-->
+
+    <!-- offline bootsrtrap link (in case of loosing internet connectivity)    ----------------->    
+    <link rel="stylesheet" type="text/css" href="bootstrap/bootstrap.min.css">
+    
+    <!-- main css link     ----------------->
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+
+
+
+</head>
+
+<body>
+
+    <div class="container-fluid">
+    
+    <!--start header -->
+        <header class="jumbo">
+            <div class="container nav-menubar">
+                <nav class="navbar navbar-fixed-top">
+                    
+                    <div class="navbar-header">
+                        <a class="navbar-brand" href="index.html">Metric Conversion System</a>
+                        <button class="navbar-toggle" data-toggle="collapse" data-target="#a1">
+                            <span class="icon-bar" style="color:black"></span>
+                            <span class="icon-bar" style="color:black"></span>
+                            <span class="icon-bar" style="color:black"></span>
+                        </button>
+                        
+                    </div>
+                    
+                    <div class="collapse navbar-collapse" id="a1">
+                        <ul class="nav navbar-nav navbar-right">
+                        <li><a  id="active" href="index.html">Home</a></li>
+                        <li><a href="charts.html">Chart</a></li>
+						<li><a href="articles.html">Articles</a></li>
+                        <li><a href="FAQs.html">Faqs</a></li>
+                        <li><a href="about_us.html">About us</a></li>
+                        <li><a href="contact_us.html">Contact us</a></li>
+                        </ul>
+                    </div>
+                       
+                </nav>
+                
+            </div>    
+            <center>
+                <div class="header-text"> 
+                    <h1>Metric Conversions</h1>
+                    <h4>Convert any measurement you want from lenght to area, mass to temprature and anything...</h4>
+                    <button class="btn hd-btn" onclick="window.location.href='faqs.html'">FAQs</button>
+                </div>          
+			</center>  
+        </header>
+        <!-- end header-->
+            
+        <!-- input section start-->
+        <div class="container-fluid input-section">
+            <div>
+                <h1>Metric conversion Calculator</h1>
+            </div>
+            <div class="container inputs">
+                <div class="row text-center ">
+                    <div class="col-lg-5">
+                        <input type="number" class="top-input" id="input_1" onfocus="clearme()" oninput="converter()" />
+                        <br>
+                        <br>
+                        
+                        <select class="bg-info list1" id="slct_1">
+                            <option value="si">Square Inches</option>
+                            <option value="smm">Square Milimeters</option>
+                            <option value="sf">Square Feet</option>
+                            <option value="sm">Square Meter</option>
+                            <option value="sy">Square Yards</option>
+                            <option value="acre">Acres</option>
+                            <option value="hectares">Hectares</option>
+                            <option value="smile">Square Miles</option>
+                            <option value="skm">Square Kilometers</option>
+                        </select>
+                    </div>
+                    <div class="col-lg-2">
+                        <span class="fas fa-arrow-right" style="font-size:50px; color:wheat"></span>
+                        
+                    </div>
+                    
+                    <div class="col-lg-5">
+                        <input type="number" id="input_2" class="top-input" />
+                        <br>
+                        <br>
+                        
+                        <select class="bg-info list1" id="slct_2">  
+                            <option value="si">Square Inches</option>
+                            <option value="smm">Square Milimeters</option>
+                            <option value="sf">Square Feet</option>
+                            <option value="sm">Square Meter</option>
+                            <option value="sy">Square Yards</option>
+                            <option value="acre">Acres</option>
+                            <option value="hectares">Hectares</option>
+                            <option value="smile">Square Miles</option>
+                            <option value="skm">Square Kilometers</option>                       
+                        </select>
+                    </div>
+                </div>            
+            </div>
+			
+            <div class="container radios">
+			
+                <div class="row">
+          
+                    <div class="col-lg-4">
+                        <div>
+                            <input type="radio" name="radio" id="areas" onclick="new_options()" checked>
+                            <label class="radio-text" for="areas">Area Conversion</label>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-4">
+                        <div>
+                            <input type="radio" name="radio" id="vol" onclick="new_options()">
+                            <label class="radio-text" for="vol">Volume Conversion </label>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-4">
+                        <div>
+                            <input type="radio" name="radio" id="mass" onclick="new_options()">
+                            <label class="radio-text" for="mass">Mass Conversion</label>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-4">
+                        <div>
+                            <input type="radio" name="radio" id="temp" onclick="new_options()">
+                            <label class="radio-text" for="temp">Temperature Conversion</label>
+                        </div>
+                    </div>
+					
+                    <div class="col-lg-4">
+                        <div>
+                            <input type="radio" name="radio" id="currency" onclick="new_options()">
+                                <label class="radio-text" for="currency">Currency Conversion</label>
+                        </div>
+                    </div>
+                        
+                    <div class="col-lg-4">
+                        <div>
+                            <input type="radio" name="radio" id="lenght" onclick="new_options()">
+                            <label class="radio-text" for="lenght">Length Conversion</label>
+                        </div>
+                    </div>
+                </div>
+            </div>                   
+        </div>
+        <!-- end input section-->
+
+    <script src="javascript/main.js"></script>
+
+            
+        <!-- front page article -->            
+        <div class="container mainpage-mainarticle">
+            
+            <div class="row">
+                
+                <div class="col-lg-12">
+                    
+                    <article>
+                        <p>The metric system originated in France in 1799 following the French Revolution although decimal units had been used in many other countries and cultures previously. Although there have been many different measurements and the definitions of the units have been revised, the official system of measurements of most countries is the modern form of the metric system which is known as the "International System of Units".</p>
+                        
+                        <p>Since other systems of measurement are still used around the world, such as the United States and the United Kingdom, this site aims to help people convert units of measurement with Metric Converter and Metric Conversion Table and to better understand alternative measurements that they are unfamiliar with. The measurement units are categorized into types (such as Temperature Conversion, Weight Conversion and so on) seen on the right-hand side which then lead to a series of metric conversion calculators.</p>
+                        
+                        <p>If you have a suggestion for new units to be added or suggestions on how to improve this site please contact us by email.</p>
+                    </article>
+                    
+                </div>
+                
+            </div>
+            
+        </div>
+        <!-- end front page article -->            
+        
+        <!-- button section start -->            
+        <div class="container button-section">
+            <div class="row container-fluid">
+                <div class="col-lg-12">
+                    
+                    <div class="row">
+                        
+                        <div class="col-lg-4">
+                            <button class="btns btn-1d" onclick="window.location.href='Conversions/area.html'">Area conversion</button>
+                        </div>
+                        
+                        <div class="col-lg-4">
+                            <button class="btns btn-1d" onclick="window.location.href='Conversions/volume.html'">Volume conversion</button>
+                        </div>
+                        
+                        <div class="col-lg-4">
+                            <button class="btns btn-1d" onclick="window.location.href='Conversions/mass.html'">Mass conversion</button>
+                        </div>
+                        
+                    </div>
+                    
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <button class="btns btn-1d" onclick="window.location.href='Conversions/temp.html'">Temp conversion</button>
+                        </div>
+                        
+                        <div class="col-lg-4">
+                            <button class="btns btn-1d" onclick="window.location.href='Conversions/currency.html'">Currency conversion</button>
+                        </div>
+                        
+                        <div class="col-lg-4">
+                            <button class="btns btn-1d" onclick="window.location.href='Conversions/length.html'">Length conversion </button>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end button section start -->            
+        
+        <!-- feature section optional -->                
+        <!--   
+        <div class="container feetures-content">
+            <div class="row">
+                <h1>Features</h1>
+                
+                <div class="col-lg-4">
+                    <img src="images/dummy.png">
+                    <h2>heading</h2>
+                    <p>paragraph</p>
+                </div>
+                
+                <div class="col-lg-4">
+                    <img src="images/dummy.png">
+                    <h2>heading</h2>
+                    <p>paragraph</p>
+                </div>
+                <div class="col-lg-4">
+                    <img src="images/dummy.png">
+                    <h2>heading</h2>
+                    <p>paragraph</p>
+                </div>
+                <br>
+                <br>
+                <br>
+                <br>
+            </div>
+        </div>
+        -->
+
+
+        <!-- articles intro columns-->
+        <div class="container-fluid mainpage-article">
+            <div class="articles">
+                <h1> Some articles related to SI System</h1>
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="article-box">
+                            <img src="img/isaac-smith-1182057-unsplash.jpg" id="article-img">
+                            <div class="article-intro">
+                                
+                                <h2>SI System</h2>
+                                <p>After the establishment of the Meter Convention on May, 
+                                    20 1875 the CIPM concentrated on the construction of new 
+                                    prototypes taking the meter and kilogram as the base units 
+                                    of length and mass. ... The name International System of Units
+                                     (SI) was given to the system by the 11th CGPM in 1960.
+                                </p><br>
+                                <div class="text-center">
+                                    <button class="btn btn-rm" onclick="window.location.href='Articles/si_system_article.html'">Read More</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="article-box">
+                            <img src="img/austin-distel-1462326-unsplash.jpg" id="article-img">
+                            <div class="article-intro">
+                                
+                                <h2>Metric System</h2>
+                                <p>History of the metric system. ... The first practical realisation of the 
+                                    metric system came in 1799, during the French Revolution, when the existing
+                                     system of measures, which had become impractical for trade, was replaced 
+                                    by a decimal system based on the kilogram and the metre.</br></br>
+
+                                </p>
+                                <div class="text-center">
+                                    <button class="btn btn-rm" onclick="window.location.href='Articles/metric_system_article.html'">Read More</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 ">
+                        <div class="article-box">
+                            <img src="img/william-iven-22449-unsplash.jpg" id="article-img">
+                            <div class="article-intro">
+
+                                <h2>Traditional U.S. Units:</h2>
+                                <p>In the early metric system there were two base units, 
+                                    the metre for length and the gram for mass. ... Mesures 
+                                    usuelles (French for customary measurements) were a system 
+                                    of measurement introduced
+                                     as a compromise between the metric system and traditional
+                                      measurements. It was used in France from 1812 to 1839.
+                                </p>
+                                <div class="text-center">
+                                    <button class="btn btn-rm" onclick="window.location.href='Articles/traditional_us_units_article.html'">Read More</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end articles intro columns -->            
+        
+
+        <!-- faq section -->
+        <div class="container faqs-section">
+            <h1>Frequently Asked Questions</h1>          
+		    <div class="row">
+                <div class="col-lg-3">
+                    <div class="faq-demo">
+                        <h4 onclick="window.location.href='faqs.html#faq_1'">How do I enter numbers in Scientific Notation?</h4>
+                    </div>        
+                </div>
+                <div class="col-lg-3">
+                    <div class="faq-demo">
+                        <h4 onclick="window.location.href='faqs.html#faq_2'">What is a knot? What is a nautical mile?</h4>
+                    </div> 
+                </div>
+                <div class="col-lg-3">
+                    <div class="faq-demo">                                   
+                        <h4 onclick="window.location.href='faqs.html#faq_5'">At what temperature are Celsius and Fahrenheit the same?</h4>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="faq-demo">
+                        <h4 onclick="window.location.href='faqs.html#faq_4'"> What is the difference between the long ton,short ton,and metric ton?</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end faq section -->            
+
+        
+        <!-- footer start -->                    
+        <footer class="jumbotron foot">
+            <div class="row">
+				<div class"col-lg-5">
+                    <div class="container text-center">
+                        <div class="foot-links">
+                            <a href="about_us.html"> About Us</a> |
+                            <a href="#"> Services</a> |
+                            <a href="#"> Privacy Policy</a> |
+                            <a href="contact_us.html"> Contact Us</a> 
+                        </div>
+                        <div class="container foot_icons">      
+                            <span class="fab fa-youtube"></span>
+                            <span class="fab fa-facebook"></span>
+                            <span class="fab fa-whatsapp"></span>
+                            <span class="fab fa-twitter"></span>
+                        </div>
+                        <p>© Copyright 2019 Metric Conversion Websites - All Rights Reserved</p>         
+                    </div>
+                </div>      
+			</div>
+        </footer>
+        <!-- end footer -->            
+        
+    </div>
+    
+</body>
+</html>
